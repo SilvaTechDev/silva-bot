@@ -1,0 +1,29 @@
+{
+  "name": "silva-bot",
+  "description": "Multi-device WhatsApp bot using Baileys",
+  "repository": "https://github.com/yourusername/silva-bot",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "env": {
+    "SESSION_ID": {
+      "description": "Mega.nz session file link (without full URL)",
+      "required": true
+    },
+    "PORT": {
+      "description": "Port for health-check",
+      "value": "9090"
+    },
+    "BOT_NAME": {
+      "description": "Bot display name",
+      "value": "SilvaBot"
+    }
+  },
+  "addons": [],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
